@@ -1,5 +1,6 @@
 from .base_model import BaseModel
 from django.db import  models
+from aula.validators import validate_par
 
 #adicionar help_text e verbose
 
