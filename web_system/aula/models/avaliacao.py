@@ -1,5 +1,6 @@
 from .base_model import BaseModel
 from django.db import  models
+from dajngo.core.validators import MaxValueValidator, MinValueValidator
 
 #adicionar help_text e verbose
 
@@ -8,9 +9,9 @@ class Avaliacao(BaseModel):
     data_avaliacao = models.DateField()
     data_vista = models.DateField()
     comentario = models.TextField()
-    nota = models.IntegerField()
+    nota = models.IntegerField(validators=[MaxValueValidator(5), MinValueValidator(1)])
     acompanhates = models.CharField()
-    linkes = models.IntegerField()
+    likes = models.IntegerField()
 
 
 

@@ -1,0 +1,14 @@
+
+
+VALIDAÇÕES :
+    full_clean() -> dispara os validators e clean metodo
+    clean() ->
+    save()
+
+    validações que necessitam de mais de um campo devem ser realizada com metodo def clean(): VS full_clean
+    validação com data NÃO podem ser realizadas com classe / metodo recebendo parametro, pq gera codigo sql e necesista gerar uma migration
+
+
+ASSOCIAÇÕES:
+    associação mais simples 1:1 com fluxo bidirecional de informações
+
