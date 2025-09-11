@@ -1,15 +1,15 @@
 from .base_model import models, BaseModel
 from django.core.validators import MinLengthValidator
-from relacionamentos.validators import validate_cpf
+from ..validators import validate_cpf
 from django.core.exceptions import ValidationError
 from datetime import date
 
 
 
 class Person(BaseModel):
-    nome = models.Charfield(max_length=100)
-    data_nascimento = models.DateField()
-    cpf = models.Charfield(max_length=100, validators=[MinLengthValidator(11), validate_cpf])
+    nome = models.CharField(max_length=100, null=True, default=True)
+    data_nascimento = models.DateField(null=True)
+    cpf = models.CharField(max_length=100, validators=[MinLengthValidator(11), validate_cpf])
 
 
 

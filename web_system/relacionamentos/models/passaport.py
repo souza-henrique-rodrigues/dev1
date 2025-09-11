@@ -1,16 +1,15 @@
 from .base_model import models, BaseModel
-from django.core.validators import MinLengthValidator
 from relacionamentos.validators.funcoes import validate_cpf
 from django.core.exceptions import ValidationError
 from datetime import date
-from .pessoa import Person
+from .person import Person
 
 
 
 class Passaport(BaseModel):
-    number = models.IntegerField(max_length=10)
-    issue_date = models.DateField()
-    expiration_date = models.DateField()
+    number = models.IntegerField(max_length=10, null=True)
+    issue_date = models.DateField(null=True)
+    expiration_date = models.DateField(null=True)
     owner = models.OneToOneField(Person, on_delete=models.CASCADE)
 
 

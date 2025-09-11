@@ -22,3 +22,55 @@ VALIDAÇÕES :
 ASSOCIAÇÕES:
     associação mais simples 1:1 com fluxo bidirecional de informações
 
+    1:1 OneToOne
+    1:n ForeignKey
+    n:n ManyToMany
+
+    CLASSE ASSOCIATIVA:
+        serve como 'tabela intermediaria' em relacionamentos many to many
+
+HERANÇA MULTIPLA:
+    python mixing
+
+
+
+CRUD(s):
+    - C -> save
+    - R -> get (parametro) -> retorna 1 unico registro
+    - U -> save
+    - D -> delete
+
+
+
+DUVIDAS_PROVA:
+    - INTEGRAR TODOS os validators nas 3 camadas (built in, custom e clean)
+    - formas de realizar import
+    - tipos corretos de raise error / validation / value / typeError
+    - QuerySet
+    - o que e por que vai dentro do __init__.py dentro de cada packe
+    - o que, por que e como registrar no admin.site.register(ClasseAqui)
+    - usando THROUGH entre os models
+    - o que é o app_label
+    - full_clean() como server e pq usar
+    - Realizando makemigrations e migrate
+    -
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
