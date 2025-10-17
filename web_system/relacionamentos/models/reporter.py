@@ -7,26 +7,27 @@ from relacionamentos.managers import ReporterManager
 
 
 class Reporter(BaseModel):
-    cpf = models.CharField(max_length=11, unique=True, validators=[validate_cpf])
+    #adicionar o cpf validator no campo cpf
+    cpf = models.CharField(max_length=11, unique=True)
     nome = models.CharField(max_length=120)
     email = models.EmailField()
 
 
-objects = ReporterManager()
+    objects = ReporterManager()
 
 
-def __str__(self):
-    return self.name
+    def __str__(self):
+        return f'{self.nome} - {self.cpf} - {self.email}'
 
 
-def clean(self):
-    forbiden_names = ['teste', 'Teste']
+    def clean(self):
+        forbiden_names = ['teste', 'Teste']
 
-    try:
-        if self.nome in forbiden_names:
-            raise ValidationError({'nome': _('Nome não pode ser teste')}, code='error1')
-    except :
-        pass
+        try:
+            if self.nome in forbiden_names:
+                raise ValidationError({'nome': _('Nome não pode ser teste')}, code='error1')
+        except :
+            pass
 
 
 

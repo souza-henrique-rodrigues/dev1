@@ -18,7 +18,7 @@ def validate_cpf(valor : str) -> None:
         raise ValidationError(_('CPF invalido'),code='invalid', params={'valor':valor})
 
     d1 = _calcular_digito(valor[:9])
-    d2 - _calcular_digito(valor[:10])
+    d2 = _calcular_digito(valor[:10])
 
     if (valor[9] + valor[10] != (d1 + d2)):
         raise ValidationError(_('CPF invalido'), code='invalid', params={'valor':valor})
