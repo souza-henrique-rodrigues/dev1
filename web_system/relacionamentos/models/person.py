@@ -12,8 +12,6 @@ class Person(BaseModel):
     cpf = models.CharField(max_length=100, validators=[MinLengthValidator(11), validate_cpf])
 
 
-
-
     def clean(self):
         today = date.today()
 

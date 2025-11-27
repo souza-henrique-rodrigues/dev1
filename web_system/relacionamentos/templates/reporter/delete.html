@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block title  %}
+    <h1>{{reporter.nome | capfirst}}</h1>
+{% endblock title %}
+
+{% block content  %}
+    <div class="content" >
+        <div class="row" >
+            <strong>Código:</strong> <p>{{reporter.id}}</p>
+             <strong>Nome:</strong> <p>{{reporter.nome}}</p>
+        </div>
+    </div>
+
+    <div>
+        <a class="btn btn-outline-light btn-lg" role="button" href="{% url 'relacionamentos:reporter_function_list' %}" >
+            <i class="bi bi-arrow-left" ></i>Voltar
+        </a>
+    </div>
+
+    <div>
+        <h3>Esta ação é irreversivel, tem certeza que deseja deletar </h3>
+
+        <form id="reporter"  action="{% url 'relacionamentos:reporter_function_delete' reporter.id  %}" method="post">
+
+            {% csrf_token %}
+
+            <input type="hidden" id="id" name="id" value="{{ reporter.id }}">
+
+            <button type="submit" class="btn btn-outline-danger btn-lg" form="reporter" value="Deletar" >
+                Sim, deletear
+            </button>
+
+            <a class="btn btn-outline-secondary btn-lg" role="button" href="{% url 'relacionamentos:reporter_function_list' %}" >
+                <i class="bi bi-x-lg" ></i>
+                Cancelar
+            </a>
+
+        </form>
+    </div>
+
+{% endblock content %}

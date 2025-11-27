@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block title %}
+    <h1>Editar Reporter</h1>
+{% endblock title %}
+{% block content %}
+    <form id ='reporter' action="{% url 'relacionamentos:reporter_function_update'  reporter.id %}" method="post" >
+        {% csrf_token %}
+
+        {% for field in form %}
+        <div class="mb-3" >
+            {{ field.label_tag }} {{ field }}
+            {% if field.help_text %}
+                <div class="form-text" >
+                    {{ field.help_text|safe }}
+                </div>
+            {% endif %}
+            <div class="invalid-feedback" >
+                {{ fields.errors }}
+            </div>
+        </div>
+        {% endfor %}
+        <button type="submit" class="btn btn-outline-success btn-lg" form="reporter" value="Salvar" >
+                Salvar
+        </button>
+        <button type="reset" class="btn btn-outline-danger btn-lg" form="reporter" value="Limpar" >
+                Limpar
+        </button>
+        <a class="btn btn-outline-light btn-lg" role="button" href="{% url 'relacionamentos:reporter_function_list' %}" >
+            <i>Voltar</i>
+        </a>
+    </form>
+{% endblock content %}

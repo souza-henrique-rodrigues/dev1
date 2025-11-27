@@ -42,19 +42,9 @@ CRUD(s):
 
 
 
-DUVIDAS_PROVA:
-    - INTEGRAR TODOS os validators nas 3 camadas (built in, custom e clean)
-    - formas de realizar import
-    - tipos corretos de raise error / validation / value / typeError
-    - QuerySet
-    - o que e por que vai dentro do __init__.py dentro de cada packe
-    - o que, por que e como registrar no admin.site.register(ClasseAqui)
-    - usando THROUGH entre os models
-    - o que é o app_label
-    - full_clean() como server e pq usar
-    - Realizando makemigrations e migrate
-    -
-
+Permissoes e autenticação
+Usando funcões usar decorators
+usando classe usar mixins
 
 
 

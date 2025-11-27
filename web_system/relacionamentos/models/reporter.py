@@ -15,6 +15,9 @@ class Reporter(BaseModel):
 
     objects = ReporterManager()
 
+    class Meta:
+        permissions = [("generate_code", 'Can generate code')]
+
 
     def __str__(self):
         return f'{self.nome} - {self.cpf} - {self.email}'
@@ -26,7 +29,7 @@ class Reporter(BaseModel):
         try:
             if self.nome in forbiden_names:
                 raise ValidationError({'nome': _('Nome não pode ser teste')}, code='error1')
-        except :
+        except:
             pass
 
 

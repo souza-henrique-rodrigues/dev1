@@ -12,17 +12,9 @@
     {% endblock menu %}
     <div class="container text-center">
       <div class="row">
-        <div class="col-lg-1">
-          {% block left %}
-          {% endblock left %}
-        </div>
-        <div class="col-lg-10">
+        <div class="col-lg-12">
           {% block main %}
           {% endblock main %}
-        </div>
-        <div class="col-lg-1">
-          {% block right %}
-          {% endblock right %}
         </div>
       </div>
       {% block additional_lines %}

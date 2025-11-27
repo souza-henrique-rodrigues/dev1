@@ -5,6 +5,12 @@
 
     {% if reporters  %}
         <h1>Lista de exemplos</h1>
+ <a class="btn btn-outline-secondary btn-lg" role="button"
+           data-bs-toggle="tooltip" data-bs-placement="top" title="Criar"
+           href="{% url 'relacionamentos:reporter_function_create' %}" >
+            <i class="bi bi-card-list" ></i>
+            Criar Reporter
+        </a>
     {% else  %}
         <h1>Nenhum reporters cadastrado</h1>
     {% endif %}
@@ -22,22 +28,42 @@
     </thead>
     <tbody>
     {% for reporter in reporters %}
+
     <tr>
         <td>{{ reporter.id}}</td>
         <td>{{ reporter.cpf}}</td>
-        <td>{{ reporter.email }}</td>
+        <td>{{ reporter.nome }}</td>
         <td>
-             <div>
+            <div>
         <a class="btn btn-outline-secondary btn-lg" role="button"
            data-bs-toggle="tooltip" data-bs-placement="top" title="Detalhar com Funções"
            href="{% url 'relacionamentos:reporter_function_detail' reporter.id %}" >
             <i class="bi bi-card-list" ></i>
+            Detalhar
         </a>
-    </div>
+                 <a class="btn btn-outline-secondary btn-lg" role="button"
+           data-bs-toggle="tooltip" data-bs-placement="top" title="Deletar"
+           href="{% url 'relacionamentos:reporter_function_delete' reporter.id %}" >
+            <i class="bi bi-card-list" ></i>
+            Excluir
+        </a>
+                 </a>
+                 <a class="btn btn-outline-secondary btn-lg" role="button"
+           data-bs-toggle="tooltip" data-bs-placement="top" title="Deletar"
+           href="{% url 'relacionamentos:reporter_function_change_name' reporter.id %}" >
+            <i class="bi bi-card-list" ></i>
+            Gerar nome novo
+        </a>
+            </div>
         </td>
         <td>
             <div>
-                Botoes de classe aqio
+                  <a class="btn btn-outline-secondary btn-lg" role="button"
+           data-bs-toggle="tooltip" data-bs-placement="top" title="Detalhar com classe"
+           href="{% url 'relacionamentos:reporter_class_read' reporter.id %}" >
+            <i class="bi bi-card-list" ></i>
+            Detalhar com classe
+        </a>
             </div>
         </td>
     </tr>
