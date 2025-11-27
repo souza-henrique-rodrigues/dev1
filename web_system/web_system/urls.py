@@ -21,8 +21,7 @@ from .views import  index, contact
 from .views.contact_view import ContactView
 from django.contrib.auth import views as auth_views
 from web_system.forms.custom_login_form import CustomLoginForm
-#from ..web_system.views import ProfileView
-
+from .views.profile import ProfileView
 
 urlpatterns = [
     path('',index, name='index'),
@@ -33,6 +32,7 @@ urlpatterns = [
     path('accounts/login/', auth_views.LoginView.as_view(template_name='accounts/login.html', authentication_form=CustomLoginForm)),
     path('accounts/',include('django.contrib.auth.urls')),
     #path('funcao/search/', views.buscar, name='search_function')
-    #path('accounts/profile/', ProfileView.as_view(), name='profile')
+    path('accounts/profile/', ProfileView.as_view(), name='profile'),
+    path('services/', include('services.urls'))
 
 ]
