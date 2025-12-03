@@ -5,15 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a427e0cb-c59e-40ca-9b8a-47990ff3a8f7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/web_system/relacionamentos/models/article.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_system/relacionamentos/models/magazine.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_system/relacionamentos/models/passaport.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_system/relacionamentos/models/reporter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_system/services/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_system/services/views/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_system/services/views/estaticas.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dev1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dev1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_system/anotações/anotacoes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/web_system/anotações/anotacoes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_system/relacionamentos/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_system/relacionamentos/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_system/relacionamentos/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_system/relacionamentos/models/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_system/relacionamentos/models/person.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_system/relacionamentos/models/person.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_system/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/web_system/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_system/templates/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/web_system/templates/menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_system/web_system/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_system/web_system/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_system/web_system/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_system/web_system/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_system/web_system/views/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_system/web_system/views/__init__.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,19 +46,21 @@
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/Teste/Documents/dev/dev1",
+    "last_opened_file_path": "/home/henrique/projetosFaculdalde/dev/dev1/web_system",
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web_system/web_system" />
+      <recent name="$PROJECT_DIR$/web_system/web_system/views" />
       <recent name="C:\Users\dti\Documents\dev1\web_system\relacionamentos\models" />
     </key>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-657d8234b839-64d779b69b7a-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.26927.74" />
+        <option value="bundled-python-sdk-f69e5c277ee4-cbfc7b97e6b2-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-252.27397.106" />
       </set>
     </attachedChunks>
   </component>

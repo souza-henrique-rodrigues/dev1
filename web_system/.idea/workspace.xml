@@ -5,18 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fea34ec6-2732-4597-9024-0cb72226ec7d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/services/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/views/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/views/estaticas.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/enumerations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/enumerations/operacoes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/serializers/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/serializers/calculo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/dev1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/dev1.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/relacionamentos/templates/reporter/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/relacionamentos/templates/reporter/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/relacionamentos/views/reporter_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/relacionamentos/views/reporter_views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/views/estaticas.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/views/estaticas.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web_system/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_system/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_system/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_system/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_system/views/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_system/views/__init__.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +50,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/henrique/projetosFaculdalde/dev/dev1/web_system",
+    "last_opened_file_path": "/home/henrique/projetosFaculdalde/projetoSemestre/PythonProject1/atividadePythonb/web_system",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
@@ -57,7 +59,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-f69e5c277ee4-cbfc7b97e6b2-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-252.27397.106" />
+        <option value="bundled-python-sdk-7bb8055f9097-cbfc7b97e6b2-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-252.28238.29" />
       </set>
     </attachedChunks>
   </component>

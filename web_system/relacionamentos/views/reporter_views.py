@@ -10,7 +10,7 @@ from django.contrib import messages
 
 
 class ReporterListView(LoginRequiredMixin, PermissionRequiredMixin,View):
-    login_url = reverse_lazy('login')
+    login_url = reverse_lazy('accounts:login')
     permission_required = 'relacionamentos.view_reporter'
 
     @staticmethod
@@ -24,7 +24,7 @@ class ReporterListView(LoginRequiredMixin, PermissionRequiredMixin,View):
 
 
 class ReporterDetailView(LoginRequiredMixin, PermissionRequiredMixin,View):
-    login_url = reverse_lazy('login')
+    login_url = reverse_lazy('accounts:login')
     permission_required = 'relacionamentos.view_reporter_views'
 
 
@@ -39,7 +39,11 @@ class ReporterDetailView(LoginRequiredMixin, PermissionRequiredMixin,View):
         return render(request, 'reporter/read.html', context)
 
 
-class ReporterUpdateView(View):
+
+class ReporterUpdateView(LoginRequiredMixin, PermissionRequiredMixin,View):
+    login_url = reverse_lazy('accounts:login')
+    permission_required = 'relacionamentos.view_reporter'
+
     @staticmethod
     def get(request,id):
         reporter = get_object_or_404(Reporter, pk=id)

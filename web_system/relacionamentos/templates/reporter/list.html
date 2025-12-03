@@ -29,17 +29,21 @@
     <tbody>
     {% for reporter in reporters %}
 
+    {% if user.is_authenticated %}
     <tr>
         <td>{{ reporter.id}}</td>
         <td>{{ reporter.cpf}}</td>
         <td>{{ reporter.nome }}</td>
         <td>
+    {% endif %}
             <div>
         <a class="btn btn-outline-secondary btn-lg" role="button"
            data-bs-toggle="tooltip" data-bs-placement="top" title="Detalhar com Funções"
            href="{% url 'relacionamentos:reporter_function_detail' reporter.id %}" >
             <i class="bi bi-card-list" ></i>
             Detalhar
+
+        {% if perms.relacionamentos.delete_reporter %}
         </a>
                  <a class="btn btn-outline-secondary btn-lg" role="button"
            data-bs-toggle="tooltip" data-bs-placement="top" title="Deletar"
@@ -47,6 +51,7 @@
             <i class="bi bi-card-list" ></i>
             Excluir
         </a>
+         {% endif %}
                  </a>
                  <a class="btn btn-outline-secondary btn-lg" role="button"
            data-bs-toggle="tooltip" data-bs-placement="top" title="Deletar"
@@ -69,6 +74,7 @@
     </tr>
     {% endfor %}
     </tbody>
+
 </table>
 {% endif  %}
 
